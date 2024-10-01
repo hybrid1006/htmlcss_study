@@ -93,7 +93,18 @@
          px, pt(1pt = 0.72인치)-->
         <!-- 퍼센트(백분율 값) -->
         <!-- 대부분 브라우저는 폰트 크기의 기본값으로 12pt=16px=1me=100% -->
+        <!-- 부모는 18px -->
+        <!-- 자식은 0.5em > 9px -->
         <p style="font-size: 10px">font-size:10px</p>
         <p style="font-size: 8pt">font-size:8pt</p>
+        <p style="font-size: 1em">font-size:1em</p>
+        <!-- 스마트폰에서 마음대로 큰 px을 사용하면 안된다. -->
+        <!-- 해상도가 변동되기에 절대 값을 사용하면 안된다. 화면에 맞게 사이즈 조절이 되야 
+          하므로 em, rem단위가 적절하다 (크기에 제한이 있기 때문에) -->
+        <div style="font-size: 20px">
+            20px
+            <p style="font-size: 0.5em">0.5em</p>
+        </div>
+        <h1>제목입니다</h1>
     </body>
 </html>
