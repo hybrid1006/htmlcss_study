@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .text-center {
+                text-align: center;
+            }
+
+            .text-right {
+                text-align: right;
+            }
+
+            .text-left {
+                text-align: left;
+            }
+
+            .text-blue {
+                color: blue;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
+
+            /* text-decoration */
+            /* 4가지 하위 프로퍼티 */
+            /* text-decoration-style : 장식선 스타일(직선, 점선 등) */
+            /* text-decoration-color : 장식선 색상 */
+            /* text-decoration-thickness : 장식선 두께 */
+
+            .underover {
+                text-decoration: dashed underline overline red;
+                /* text-decoration-style: dashed;
+                text-decoration-line: underline overline;
+                text-decoration-color: red; */
+            }
+
+            .uppercase {
+                text-transform: uppercase;
+            }
+
+            /* 영어 문장에서 각 단어의 첫 문자만 대문자로 변환 */
+            .capitalize {
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 정렬 -->
+        <h1 class="text-center">가운데 정렬</h1>
+        <h1 class="text-right">오른쪽 정렬</h1>
+        <h1 class="text-left">왼쪽 정렬</h1>
+        <!-- 색상 -->
+        <h1 class="text-blue">파란색</h1>
+        <!-- 장식선 -->
+        <p class="underline">밑줄을 가진 글씨입니다.</p>
+        <p class="underover">윗줄과 밑줄을 가진 글씨입니다.</p>
+        <p class="uppercase">all letters are converted to uppercase</p>
+        <p class="lowercase">all letters are converted to uppercase</p>
+        <p class="capitalize">only the first eltter of a word is converted to uppercase</p>
+    </body>
+</html>
